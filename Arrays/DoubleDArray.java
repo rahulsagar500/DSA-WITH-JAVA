@@ -37,12 +37,12 @@ public class DoubleDArray {
     public static void main(String[] args) {
         TwoDArray obj=new TwoDArray();
         obj.Initalizing(2,2);
-        //obj.InsertingArray(0,0,10);
-        //obj.InsertingArray(0,1,20);
-        //obj.InsertingArray(1,0,30);
-        //obj.InsertingArray(1,1,40);
+        obj.InsertingArray(0,0,10);
+        obj.InsertingArray(0,1,20);
+        obj.InsertingArray(1,0,30);
+        obj.InsertingArray(1,1,40);
         obj.ArrayTraversing(2,2);
-        //System.out.println(Arrays.toString(obj.arr));
+        
 
     }
 }
