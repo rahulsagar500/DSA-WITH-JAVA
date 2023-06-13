@@ -10,6 +10,7 @@ class TwoDArray{
             }
         }
     }
+    
     public void InsertingArray(int row , int col,int value){
         try{
             if(arr[row][col]==Integer.MIN_VALUE){
@@ -33,6 +34,14 @@ class TwoDArray{
 
     }
 }
+   public void ArrayDeletion(int row , int col){
+        try{
+            arr[row][col]=Integer.MIN_VALUE;
+            System.out.println("The element in the index you entered is deleted!");
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("The index you entered is invalid!");
+        }
+    }
 public class DoubleDArray {
     public static void main(String[] args) {
         TwoDArray obj=new TwoDArray();
@@ -41,7 +50,9 @@ public class DoubleDArray {
         obj.InsertingArray(0,1,20);
         obj.InsertingArray(1,0,30);
         obj.InsertingArray(1,1,40);
+        obj.ArrayDeletion(1,1);
         obj.ArrayTraversing(2,2);
+        
         
 
     }
